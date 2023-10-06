@@ -1,0 +1,38 @@
+
+table{
+    width:90%;
+    border-radius: 10px;
+    border: 2px solid rgb(58, 57, 73);
+    padding: 2px;
+}
+
+
+.table-heading{
+    color: var(--main);
+    font-size: larger;
+    border-bottom: 2px solid var(--main);
+  }
+  
+  .thead{
+  background-color:var(--main);
+  color:white;
+  text-align: left;
+  /* text-decoration:underline; */
+
+;  }
+
+
+
+
+th:hover{
+  background-color:white;
+  color:var(--main);
+}
+  
+
+tr:hover{
+  background-color:white;
+  color:var(--main);
+}
+  
+  

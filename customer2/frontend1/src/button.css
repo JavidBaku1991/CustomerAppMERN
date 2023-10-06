@@ -1,0 +1,352 @@
+:root{
+    --main:rgb(48, 34, 89);
+    --secondary:rgb(70, 37, 170);
+}
+
+.button-container{
+	
+	/* width: 100%; */
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	gap: 2px;
+	align-items: center;
+	justify-content: center;
+
+}
+.button-l {
+	position: relative;
+height: 100%;
+	width: 33%;
+	text-align: center;
+	font-size:14px;
+	line-height: 1.5;
+	text-shadow:20%;
+	padding: 7px;
+	border-radius: 2rem;
+	text-decoration: none;
+	color: #fff;
+	text-transform: lowercase;
+	/* letter-spacing: .05rem; */
+	transition: all .3s;
+	/* position: relative; */
+	overflow: hidden;
+	z-index: 1;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(62, 55, 84);
+		border-radius: 2rem;
+		z-index: -2;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: rgb(14, 13, 19);
+		transition: all .3s;
+		border-radius:4rem;
+		z-index: -1;
+	}
+	&:hover {
+		color: rgb(110, 76, 211);
+        background-color: rgb(110, 76, 211);
+
+		&:before {
+			width: 100%;
+		}
+	}
+}
+
+
+.read-button{
+	
+		position: relative;
+		display: inline-block;
+		padding: 30px;
+		text-align: center;
+		text-shadow:20%;
+		padding: 8px;
+		border-radius: 2rem;
+		text-decoration: none;
+		color: #fff;
+		text-transform: lowercase;
+		font-size: 10px;
+		letter-spacing: .05rem;
+		transition: all .3s;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		width: 90%;
+		margin: 10px;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgb(62, 55, 84);
+			border-radius: 4rem;
+			z-index: -2;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			background-color: rgb(14, 13, 19);
+			transition: all .3s;
+			border-radius:4rem;
+			z-index: -1;
+		}
+		&:hover {
+			color: rgb(110, 76, 211);
+			background-color: rgb(110, 76, 211);
+	
+			&:before {
+				width: 100%;
+			}
+		}
+	
+}
+
+
+
+
+
+.button{
+	margin: 15px;
+
+	width: 25%;
+	height: 60px;
+	  position: relative;
+	  text-align: center;
+	  text-overflow: ellipsis;
+	  	top: 15%;
+	padding: .75rem 1.25rem;
+	border-radius: 10rem;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: .15rem;
+	transition: all .3s;
+	/* position: relative; */
+	/* overflow: hidden; */
+	z-index: 1;
+	&:after {
+	  content: '';
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgb(62, 55, 84);
+	  border-radius: 10rem;
+	  z-index: -2;
+	}
+	&:before {
+	  content: '';
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 0%;
+	  height: 100%;
+	  background-color: rgb(14, 13, 19);
+	  transition: all .3s;
+	  border-radius: 10rem;
+	  z-index: -1;
+	}
+	&:hover {
+	  color: rgb(110, 76, 211);
+		  background-color: rgb(110, 76, 211);
+	
+	  &:before {
+		width: 100%;
+	  }
+	}
+	}
+
+
+	.add-button {
+		width: 100px;
+		height: 60px;
+		  position: relative;
+		  
+			  top: 15%;
+		padding: .75rem 1.25rem;
+		border-radius: 10rem;
+		text-decoration: none;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 1rem;
+		letter-spacing: .15rem;
+		transition: all .3s;
+		/* position: relative; */
+		/* overflow: hidden; */
+		z-index: 1;
+		&:after {
+		  content: '';
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background-color: rgb(62, 55, 84);
+		  border-radius: 10rem;
+		  z-index: -2;
+		}
+		&:before {
+		  content: '';
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  width: 0%;
+		  height: 100%;
+		  background-color: rgb(14, 13, 19);
+		  transition: all .3s;
+		  border-radius: 10rem;
+		  z-index: -1;
+		}
+		&:hover {
+		  color: rgb(110, 76, 211);
+			  background-color: rgb(110, 76, 211);
+		
+		  &:before {
+			width: 100%;
+		  }
+		}
+		}
+
+
+		.create-button{
+			margin:0 auto;
+			display:block;
+			width: 200px;
+			height: 60px;
+			  position: relative;
+			  text-align: center;
+			  text-overflow: ellipsis;
+				  top: 15%;
+			padding: .75rem 1.25rem;
+			border-radius: 10rem;
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 1rem;
+			letter-spacing: .15rem;
+			transition: all .3s;
+			/* position: relative; */
+			/* overflow: hidden; */
+			z-index: 1;
+			&:after {
+			  content: '';
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  background-color: rgb(62, 55, 84);
+			  border-radius: 10rem;
+			  z-index: -2;
+			}
+			&:before {
+			  content: '';
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  width: 0%;
+			  height: 100%;
+			  background-color: rgb(14, 13, 19);
+			  transition: all .3s;
+			  border-radius: 10rem;
+			  z-index: -1;
+			}
+			&:hover {
+			  color: rgb(110, 76, 211);
+				  background-color: rgb(110, 76, 211);
+			
+			  &:before {
+				width: 100%;
+			  }
+			}
+			}
+		
+		
+			.add-button {
+				width: 100px;
+				height: 60px;
+				  position: relative;
+				  
+					  top: 15%;
+				padding: .75rem 1.25rem;
+				border-radius: 10rem;
+				text-decoration: none;
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 1rem;
+				letter-spacing: .15rem;
+				transition: all .3s;
+				/* position: relative; */
+				/* overflow: hidden; */
+				z-index: 1;
+				&:after {
+				  content: '';
+				  position: absolute;
+				  bottom: 0;
+				  left: 0;
+				  width: 100%;
+				  height: 100%;
+				  background-color: rgb(62, 55, 84);
+				  border-radius: 10rem;
+				  z-index: -2;
+				}
+				&:before {
+				  content: '';
+				  position: absolute;
+				  bottom: 0;
+				  left: 0;
+				  width: 0%;
+				  height: 100%;
+				  background-color: rgb(14, 13, 19);
+				  transition: all .3s;
+				  border-radius: 10rem;
+				  z-index: -1;
+				}
+				&:hover {
+				  color: rgb(110, 76, 211);
+					  background-color: rgb(110, 76, 211);
+				
+				  &:before {
+					width: 100%;
+				  }
+				}
+				}
+	
+	
+	.but-1{
+	  /* flex-grow: 2; */
+	}
+	.but-2{
+	  /* flex-grow:2 ; */
+	  /* margin-left: 10px; */
+	  width: 40%;
+	}
+	.but-3{
+	  /* flex-grow: 9; */
+	  content: '';
+	  color: red;
+	  /* margin-left: 10px; */
+	  width: 30%;
+	  
+	}
